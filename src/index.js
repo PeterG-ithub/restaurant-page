@@ -1,1 +1,3 @@
-console.log('index.js i connected!!!!!')
+import './style.css';
+
+console.log('index.js is connected!!!!!')
