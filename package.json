@@ -2,7 +2,7 @@
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "A javascript project from [TOP](https://www.theodinproject.com/lessons/javascript-restaurant-page), to practice webpack and npm",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
