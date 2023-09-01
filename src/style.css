@@ -8,7 +8,8 @@ html, body {
   min-height: 100vh;
 }
 
-body {
+#content {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -43,10 +44,11 @@ button:hover {
 }
 
 /* main hero*/
-#content {
+.hero-title {
   padding: 2rem;
   color: rgb(255, 255, 255);
   background: url('./restaurant.png');
+  background-size: cover;
   background-color: rgb(92, 92, 92);
   font-family: 'Minecraft', Arial, Helvetica, sans-serif;
   font-size: 5rem;
