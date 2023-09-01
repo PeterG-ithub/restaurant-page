@@ -46,6 +46,7 @@ button:hover {
 #content {
   padding: 2rem;
   color: rgb(255, 255, 255);
+  background: url('./restaurant.png');
   background-color: rgb(92, 92, 92);
   font-family: 'Minecraft', Arial, Helvetica, sans-serif;
   font-size: 5rem;
