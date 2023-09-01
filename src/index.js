@@ -1,12 +1,11 @@
 import './style.css';
 import Restaurant from './restaurant.png';
-
+import menu from './menu.js'
 console.log('index.js is connected!!!!!')
 
-const content = document.querySelector('#content');
-function clearContent() {
-  content.innerHTML = '';
-}
+const content = document.createElement('div');
+content.classList.add('content');
+document.body.appendChild(content);
 
 const navContainer = document.createElement('div');
 navContainer.classList.add('nav-container');
@@ -32,3 +31,22 @@ navContainer.appendChild(menuNav)
 navContainer.appendChild(aboutNav)
 content.appendChild(navContainer)
 content.appendChild(heroTitle)
+
+function clearContent() {
+  heroTitle.innerHTML = '';
+}
+
+menuNav.addEventListener('click', () => {
+  clearContent();
+  menu();
+})
+
+homeNav.addEventListener('click', () => {
+  clearContent();
+  heroTitle.innerHTML = 'Minecrƒft cafe'
+})
+
+aboutNav.addEventListener('click', () => {
+  clearContent();
+  heroTitle.innerHTML = 'About'
+})
