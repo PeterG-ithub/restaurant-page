@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 @font-face {
   font-family: 'Minecraft';
   src: url('./minecraft-font.ttf') format('truetype');
@@ -11,29 +20,35 @@
   font-style: normal;
 }
 
-#content {
-  color: red;
-  background-color: aqua;
-  font-family: 'Minecraft', Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-}
-
 /* nav bar */
 .nav-container {
   font-family: 'Minecraft, Arial, Helvetica, sans-serif';
+  background-color: rgb(126, 126, 126);
   display: flex;
   padding: 0 1rem;
   justify-content: flex-end;
 }
 
-.nav-container>* {
+.nav-container > * {
   font-family: 'Minecraft', 'Courier New', Courier, monospace;
   font-size: 1rem;
   padding: 1rem;
-  background-color: aqua;
+  background-color: inherit;
   border: transparent;
+  color: white;
 }
 
 button:hover {
-  background-color: aquamarine;
+  background-color: rgb(142, 255, 127);
+}
+
+/* main hero*/
+#content {
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(92, 92, 92);
+  font-family: 'Minecraft', Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  flex: 1;
+  text-align: center;
 }
